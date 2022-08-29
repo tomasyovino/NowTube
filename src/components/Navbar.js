@@ -12,7 +12,7 @@ const Navbar = () => {
         p={2} 
         sx={{ position: "sticky", background: "#161616", top: 0, justifyContent: "space-between", zIndex: 99 }}
     >
-        <Link to="/" style={{ display: "flex", alignItems: "center", gap: "20px", color: "#FFFFFF" }}>
+        <Link to="/" style={{ display: "flex", alignItems: "center", gap: "10px", color: "#FFFFFF" }}>
             <img src={logo} alt="logo" height={45} />
             <h2>NowTube</h2>
         </Link>

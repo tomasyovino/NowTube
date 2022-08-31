@@ -9,6 +9,8 @@ const Feed = () => {
   const [ selectedCategoryIcon, setSelectedCategoryIcon ] = useState(<HomeIcon />);
   const [ videos, setVideos ] = useState([]);
 
+  console.log(videos)
+
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items))
@@ -29,8 +31,8 @@ const Feed = () => {
           {selectedCategoryIcon}
           {selectedCategory}
         </Typography>
-
-        <Videos videos={videos} />
+ 
+        <Videos videos={videos} justifyContent="flex-start" />
       </Box>
     </Stack>
   )
